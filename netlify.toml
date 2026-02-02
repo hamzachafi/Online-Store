@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = ""
+
+# Allow the admin UI to work nicely
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-cache"
