@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sku-101",
+    "name": "Precision Caliper 150mm",
+    "category": "tools",
+    "price": 349.9,
+    "image": "assets/img/product-1.png",
+    "description": "Stainless steel digital caliper with 0.01mm resolution.",
+    "featured": 1
+  },
+  {
+    "id": "sku-102",
+    "name": "3D Printing Filament PLA 1kg",
+    "category": "materials",
+    "price": 199.0,
+    "image": "assets/img/product-2.png",
+    "description": "1.75mm diameter, premium PLA filament for prototyping.",
+    "featured": 1
+  },
+  {
+    "id": "sku-103",
+    "name": "Safety Glasses (Anti‑Fog)",
+    "category": "safety",
+    "price": 79.0,
+    "image": "assets/img/product-3.png",
+    "description": "Clear lens, anti‑fog coating, comfortable fit.",
+    "featured": 0
+  }
+]

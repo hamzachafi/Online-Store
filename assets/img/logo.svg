@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" viewBox="0 0 128 32" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="128" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#0b1220" stroke="url(#g)"/>
+  <path d="M11 20 L16 9 L21 20" stroke="#22d3ee" stroke-width="2" fill="none"/>
+  <path d="M14 16 H18" stroke="#38bdf8" stroke-width="2"/>
+  <text x="40" y="21" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="16" fill="#e5e7eb">Hamza Chafi</text>
+</svg>
