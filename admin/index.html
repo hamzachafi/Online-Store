@@ -12,5 +12,29 @@
   <div id="cms"></div>
   <!-- Decap CMS (formerly Netlify CMS) -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<!-- Netlify Identity widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Redirect back to /admin after successful login and handle invites -->
+<script>
+  if (window.netlifyIdentity) {
+    // When the widget initializes…
+    window.netlifyIdentity.on('init', (user) => {
+      // If no user is logged in, listen for a login event and then go to the CMS
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+
+    // If this page was opened from an invite link, show the widget
+    // (it will display the “Accept invite / set password” flow)
+    const hash = (typeof location !== 'undefined' && location.hash) || '';
+    if (hash.includes('invite_token') || hash.includes('confirmation_token')) {
+      window.netlifyIdentity.open('signup'); // or just open()
+    }
+  }
+</script>  
 </body>
 </html>
